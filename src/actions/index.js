@@ -6,7 +6,7 @@ const ROOT_URL=`http://samples.openweathermap.org/data/2.5/forecast?appid=${API_
 
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
-export function fecthWeather(city){
+export function fetchWeather(city){
     const url=`${ROOT_URL}&q=${city},us`;
     //We are passing the promise to the action payload
     const request=axios.get(url);
